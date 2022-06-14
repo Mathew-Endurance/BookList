@@ -1,22 +1,37 @@
 import React from "react";
-import ReactDom from "react-dom";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
 
-function BookList() {
-  return;
-}
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
 
-const Person = () => <h2>this is new header</h2>;
-const Message = () => <p>this is the paragraph</p>;
+// // import logo from './logo.svg';
+// // import './App.css';
 
-ReactDom.render(<BookList />, document.getElementById("root"));
+// // function App() {
+// //   return (
+// //     <div className="App">
+// //       <header className="App-header">
+// //         <img src={logo} className="App-logo" alt="logo" />
+// //         <p>
+// //           Edit <code>src/App.js</code> and save to reload.
+// //         </p>
+// //         <a
+// //           className="App-link"
+// //           href="https://reactjs.org"
+// //           target="_blank"
+// //           rel="noopener noreferrer"
+// //         >
+// //           Learn React
+// //         </a>
+// //       </header>
+// //     </div>
+// //   );
+// // }
 
-//function Greeting() {
-//return (
-//  <React.Fragment>
-//    <div>
-//      <Person />
-//        <Message />
-//     </div>
-//    </React.Fragment>
-//);
-//}
+// // export default App;
